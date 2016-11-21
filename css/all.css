@@ -1,0 +1,383 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header{
+	position: fixed;
+	height: 110px;
+	width: 1010px;
+	border: 1px solid #F5F5F5;
+	border-left: none;
+	border-right: none;
+	box-shadow:0px 2px 1px -1px rgba(20%,20%,40%,0.5);
+	background-color: #FFFFFF;
+	margin-bottom: 100px;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.header{
+		height: auto;
+	}
+}
+
+.logo{
+	position: absolute;
+	top: 60px;
+	left: 30px;
+}
+
+.logo a{
+	width: 250px;
+	height: 40px;
+	display: block;
+	text-indent:-99999px;
+	background: url("../images/logo.png") no-repeat;
+}
+
+@media (max-width: 768px) {
+	.logo{
+		position: relative;
+		margin: 0 auto;
+		width: 250px;
+	}
+
+}
+
+.menu{
+
+	margin-top: 70px;
+	margin-right: 20px;
+	float: right; 
+}
+
+.menu li{
+	float: left;
+	font-family: fantasy;
+	font-size: 20px;
+	margin-left: 20px;
+	text-align:center;
+}
+
+.menu li a{
+	color:#00DDAA;
+}
+
+@media (max-width: 768px) {
+	.menu{
+		float: none;
+	}
+	
+	.menu li{
+		width: 90%;
+		float: none;
+		margin: 0 auto 10px auto;
+	}
+
+	.menu li a{
+		width: 100%;
+		
+	}
+}
+
+.contact{
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	background-color: #DDDDDD;
+}
+
+.contact ul{
+	float: right;
+}
+
+.contact li{
+	display: inline;
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.twitter a{
+	color:#99BBFF;
+}
+
+a {
+    text-decoration:none;
+    color: none;
+}
+
+.content{
+	width: 98%;
+	padding:130px 5px 10px 0px; 
+	float: left;
+}
+
+.content img{
+	display:block;
+	margin:auto;
+}
+/*.content ul li{
+	margin-right: 20px;
+	float: left;
+	width:280px;
+	height: 380px;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #F5F5F5;
+	border-top: none;
+	border-radius: 5px;
+	box-shadow:0px 3px 2px -1px rgba(20%,20%,40%,0.5);
+}*/
+
+.aboutme{
+	width: 98%;
+	padding:130px 5px 10px 25px; 
+	float: left;
+}
+
+
+.title_{
+
+	height: 30px;
+	right: 0px;
+	width: 100%;
+	background-color: #DDDDDD;
+	
+}
+.title_ ul{
+	font-size: 30px;
+	font-family: fantasy;
+	float: right;
+	padding-right: 20px;
+}
+
+.aboutme_img {
+
+	margin-top: 25px;
+	width: 30%;
+	float: left;
+}
+.aboutme_img img{
+	display:block;
+	margin:auto;
+	height: 300px;
+	width: 220px;
+}
+.aboutme_text {
+	font-family: 微軟正黑體;
+	font-size: 20px;
+	line-height: 25px;
+	width: 65%;
+	float:left;
+	margin-top: 25px;
+	
+}
+
+.aboutme_text ul{
+	display: block;
+	font-size: 15px;
+}
+.aboutme_text li{
+	width:15%;
+	padding-left: 3px;
+	background-color: #00FFCC;
+	font-weight: bolder;
+}
+.experience{
+	width: 98%;
+	padding:130px 5px 10px 25px; 
+	float: left;
+}
+
+.edu {
+	margin-top: 25px;
+	height: auto;
+	width: 45%;
+	float: left;
+	background-color: #00FFCC;
+	border-style:dashed;
+	border-width: 10px;
+	border-color: #DDDDDD;
+	line-height: 30px;
+	font-family: 微軟正黑體;
+	padding-bottom: 15px;
+}
+.edu img{
+	display:block;
+	margin:auto;
+	height: 180px;
+	width: auto;
+	opacity:0.6;
+	filter: alpha(opacity=30);
+	
+}
+.edu img:hover{
+	display:block;
+	margin:auto;
+	height: 180px;
+	width: auto;
+	opacity:0.3;
+	filter: alpha(opacity=30);
+
+}
+.edu ul{
+	
+	font-size: 18px;
+	text-align:center;　
+
+}
+.edu_title{
+	font-size: 22px;
+	display: block;
+	margin: auto;
+	font-weight: bolder;
+	text-align:center;　
+}
+.work {
+	
+	margin-top: 25px;
+	height: auto;
+	width: 45%;
+	float: right;
+	font-family: 微軟正黑體;
+	background-color: #DDDDDD;
+	border-style:dashed;
+	border-width: 10px;
+	border-color: #00FFCC;
+	line-height: 30px;
+	font-family: 微軟正黑體;
+	padding-bottom: 15px;
+}
+.work img{
+	display:block;
+	margin:auto;
+	height: 180px;
+	width: auto;
+	opacity:0.6;
+	filter: alpha(opacity=30);
+	
+}
+.work img:hover{
+	display:block;
+	margin:auto;
+	height: 180px;
+	width: auto;
+	opacity:0.3;
+	filter: alpha(opacity=30);
+}
+.work ul{
+	
+	font-size: 18px;
+	text-align:center;　
+
+}
+.work li{
+	font-size: 22px;
+	display: block;
+	margin: auto;
+	font-weight: bolder;
+	text-align:center;　
+}
+.contact_{
+	width: 98%;
+	padding:130px 100px 10px 25px; 
+	float: left;
+}
+.mail{
+	width: 500px;
+	height: auto;
+	font-family: fantasy;
+	font-size: 25px;
+	display: block;
+	margin: auto;
+}
+.mail img{
+	width: 50px;
+	height: auto;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.call{
+	width: 500px;
+	height: auto;
+	font-family: fantasy;
+	font-size: 25px;
+	display: block;
+	margin: auto;
+}
+.call img{
+	width: 50px;
+	height: auto;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.bottom{
+	width: 98%;
+	padding:80px 100px 10px 25px; 
+	float: left;
+}
+@media (max-width: 768px) {
+	.content{
+		padding: 40px 0 0 0;
+	}
+
+
+	.content ul li{
+		margin: auto;
+		float: none;
+		max-width: 100%;
+		
+	}
+}
